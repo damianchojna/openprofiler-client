@@ -1,0 +1,23 @@
+{
+  "name": "openprofiler-client",
+  "version": "1.0.0",
+  "description": "Client Node.js for OpenProfiler distributed tracing system",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damianchojna/openprofiler-client.git"
+  },
+  "keywords": [
+    "profiler",
+    "tracking",
+    "benchmark"
+  ],
+  "author": "Damian Chojna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damianchojna/openprofiler-client/issues"
+  },
+  "homepage": "https://github.com/damianchojna/openprofiler-client#readme"
+}

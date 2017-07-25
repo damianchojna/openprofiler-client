@@ -1,2 +1,3 @@
 # openprofiler-client
-Distributed tracing system
+
+Client Node.js for OpenProfiler distributed tracing system 
