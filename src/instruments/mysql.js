@@ -1,5 +1,7 @@
 const _ = require("lodash");
-const mysqlConnection = require('../../../node_modules/mysql/lib/Connection');
+try {
+    const mysqlConnection = require('mysql/lib/Connection');
+} catch(e) {}
 
 module.exports = function (tracer, appName) {
 

@@ -1,9 +1,7 @@
-/**
- * Wykorzystywane do auth api
- */
-
-const request = require('request');
 const _ = require('lodash');
+try {
+    const request = require('request');
+} catch(e) {}
 
 module.exports = (tracer, appName) => {
 

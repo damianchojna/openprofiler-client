@@ -1,4 +1,6 @@
-const Memcached = require('memcached');
+try {
+    const Memcached = require('memcached');
+} catch(e) {}
 
 module.exports = (tracer, appName) => {
 
