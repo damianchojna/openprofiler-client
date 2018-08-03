@@ -1,10 +1,9 @@
 {
   "name": "openprofiler-client",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Client Node.js for OpenProfiler distributed tracing system",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/damianchojna/openprofiler-client.git"
@@ -19,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/damianchojna/openprofiler-client/issues"
   },
-  "homepage": "https://github.com/damianchojna/openprofiler-client#readme"
+  "homepage": "https://github.com/damianchojna/openprofiler-client#readme",
+  "dependencies": {
+    "deasync": "^0.1.13",
+    "lodash": "^4.17.10",
+    "ws": "^6.0.0"
+  }
 }
