@@ -1,10 +1,9 @@
-try {
-    const Memcached = require('memcached');
-} catch(e) {}
-
 module.exports = (tracer, appName) => {
 
+    const Memcached = require('memcached');
+
     let memcachedCommandFunc = Memcached.prototype.command;
+
     Memcached.prototype.command = function (queryCompiler, server) {
         let query = queryCompiler();
         let queryCallbackFunc = query.callback;

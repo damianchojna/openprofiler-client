@@ -1,11 +1,11 @@
 const _ = require('lodash');
-try {
-    const request = require('request');
-} catch(e) {}
 
 module.exports = (tracer, appName) => {
 
+    const request = require('request');
+
     let forwardedFunction = request.Request.prototype.init;
+
     request.Request.prototype.init = function (options) {
         let idTrack = tracer.start(appName, 'request', options);
 

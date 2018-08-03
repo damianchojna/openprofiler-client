@@ -1,9 +1,9 @@
-try {
-    let jsonrpc = require('multitransport-jsonrpc');
-} catch(e) {}
-
 module.exports = function (tracer, appName) {
+
+    let jsonrpc = require('multitransport-jsonrpc');
+
     let jsonrpcRequestFunction = jsonrpc.transports.client.http.prototype.request;
+
     jsonrpc.transports.client.http.prototype.request = function () {
         let body = arguments[0];
         let callback = arguments[1];

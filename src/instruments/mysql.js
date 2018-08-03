@@ -1,9 +1,8 @@
 const _ = require("lodash");
-try {
-    const mysqlConnection = require('mysql/lib/Connection');
-} catch(e) {}
 
 module.exports = function (tracer, appName) {
+
+    const mysqlConnection = require('mysql/lib/Connection');
 
     let queryFunc = mysqlConnection.prototype.query;
 
